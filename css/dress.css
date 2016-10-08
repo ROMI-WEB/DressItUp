@@ -2,7 +2,9 @@
   border-radius: 20px;
   background: url("../images/svgBackground.png"); }
 
-.hide {
-  display: none; }
+.sp-container {
+  position: absolute !important;
+  top: 30% !important;
+  left: 65% !important; }
 
 /*# sourceMappingURL=dress.css.map */

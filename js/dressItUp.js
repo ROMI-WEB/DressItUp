@@ -52,6 +52,37 @@ function dressItUp () {
     broccoli.buttonMoustacheThree.addEventListener("click", addElement);
     broccoli.buttonMoustacheFour.addEventListener("click", addElement);
     broccoli.buttonMoustacheFive.addEventListener("click", addElement);
+    
+    /**
+     * Listeners para cambiar el color del elemento seleccionado
+     */
+    $("#glasses").spectrum().on('move.spectrum', function(e, tinycolor) {
+        this.style.fill = tinycolor.toHexString();
+    });
+    $(".skin").spectrum().on('move.spectrum', function(e, tinycolor) {
+        this.style.fill = tinycolor.toHexString();
+    });
+    $(".shirt").spectrum().on('move.spectrum', function(e, tinycolor) {
+        this.style.fill = tinycolor.toHexString();
+    });
+    $(".tie").spectrum().on('move.spectrum', function(e, tinycolor) {
+        this.style.fill = tinycolor.toHexString();
+    });
+    $(".belt").spectrum().on('move.spectrum', function(e, tinycolor) {
+        this.style.fill = tinycolor.toHexString();
+    });
+    $("#pants").spectrum().on('move.spectrum', function(e, tinycolor) {
+        this.style.fill = tinycolor.toHexString();
+    });
+    $(".moustache").spectrum().on('move.spectrum', function(e, tinycolor) {
+        this.style.fill = tinycolor.toHexString();
+    });
+
+//    this.moustacheOne = document.getElementById("firstmoustache");
+//    this.moustacheTwo = document.getElementById("secondmoustache");
+//    this.moustacheThree = document.getElementById("thirdmoustache");
+//    this.moustacheFour = document.getElementById("fourthmoustache");
+//    this.moustacheFive = document.getElementById("fifthmoustache");
 
 };
 
