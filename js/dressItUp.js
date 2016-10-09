@@ -19,6 +19,10 @@ function dressItUp () {
     var hide = function (element) {
         element.style.visibility = "hidden";
     };
+    
+    var remove = function () {
+        this.style.visibility = "hidden";
+    };
 
     /**
      * Se asegura de no superponer elementos
@@ -54,6 +58,17 @@ function dressItUp () {
     broccoli.buttonMoustacheFive.addEventListener("click", addElement);
     
     /**
+     * Listeners para quitar elementos desde el personaje
+     */
+    broccoli.hat.addEventListener("dblclick", remove);
+    broccoli.tie.addEventListener("dblclick", remove);
+    broccoli.bow.addEventListener("dblclick", remove);
+    broccoli.glasses.addEventListener("dblclick", remove);
+    $(".moustache").on("dblclick", remove);
+    broccoli.suitcase.addEventListener("dbclick", remove);
+    
+    
+    /**
      * Listeners para cambiar el color del elemento seleccionado
      */
     $("#glasses").spectrum().on('move.spectrum', function(e, tinycolor) {
@@ -77,13 +92,9 @@ function dressItUp () {
     $(".moustache").spectrum().on('move.spectrum', function(e, tinycolor) {
         this.style.fill = tinycolor.toHexString();
     });
-
-//    this.moustacheOne = document.getElementById("firstmoustache");
-//    this.moustacheTwo = document.getElementById("secondmoustache");
-//    this.moustacheThree = document.getElementById("thirdmoustache");
-//    this.moustacheFour = document.getElementById("fourthmoustache");
-//    this.moustacheFive = document.getElementById("fifthmoustache");
-
+    $("#hair").spectrum().on('move.spectrum', function(e, tinycolor) {
+        this.style.fill = tinycolor.toHexString();
+    });
 };
 
 dressItUp.prototype.restore = function () {

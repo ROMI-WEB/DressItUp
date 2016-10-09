@@ -42,6 +42,4 @@ Character.prototype.setDefaultStyle = function () {
 
     this.glasses.style.visibility = "hidden";
     this.tie.style.visibility = "hidden";
-    this.bow.style.visibility = "hidden";
-    this.hat.style.visibility = "hidden";
 };
