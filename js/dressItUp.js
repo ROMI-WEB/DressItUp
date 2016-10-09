@@ -56,6 +56,8 @@ function dressItUp () {
     broccoli.buttonMoustacheThree.addEventListener("click", addElement);
     broccoli.buttonMoustacheFour.addEventListener("click", addElement);
     broccoli.buttonMoustacheFive.addEventListener("click", addElement);
+    document.getElementById("disket").addEventListener("click", self.download);
+
     
     /**
      * Listeners para quitar elementos desde el personaje
@@ -107,6 +109,12 @@ dressItUp.prototype.addElement = function () {
 
 dressItUp.prototype.hideElement = function () {
     this.style.visibility = "hidden";
+};
+
+dressItUp.prototype.download = function () {
+    document.getElementById("mark").style.fill = "#ccc";
+    saveSvgAsPng(document.getElementById("broccoli"), "broccoli.png");
+    document.getElementById("mark").style.fill = "none";
 };
 
 var broccoli = new dressItUp();
