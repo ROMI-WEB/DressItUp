@@ -7,4 +7,8 @@
   top: 30% !important;
   left: 65% !important; }
 
+body {
+  font-family: "Catamaran";
+  background: url("../images/background.png"); }
+
 /*# sourceMappingURL=dress.css.map */

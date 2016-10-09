@@ -10,9 +10,11 @@ Diseño de un juego en el que puedas elegir los colores de la vestimenta de el p
     - [Bootstrap](http://getbootstrap.com/)
 
 - JavaScript
+    - [Spectrum Color Picker](https://bgrins.github.io/spectrum/)
 
 - Otros
     - [Sass](http://sass-lang.com/)
+    - [FontAwesome to Favicon](http://paulferrett.com/fontawesome-favicon/)
 
 ## Screenshots
 

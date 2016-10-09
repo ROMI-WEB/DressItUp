@@ -35,11 +35,9 @@ function Character () {
 
 Character.prototype.setDefaultStyle = function () {
     this.moustacheOne.style.visibility = "hidden";
-    this.moustacheTwo.style.visibility = "hidden";
     this.moustacheThree.style.visibility = "hidden";
     this.moustacheFour.style.visibility = "hidden";
     this.moustacheFive.style.visibility = "hidden";
 
-    this.glasses.style.visibility = "hidden";
     this.tie.style.visibility = "hidden";
 };

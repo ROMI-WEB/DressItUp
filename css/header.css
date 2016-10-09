@@ -1,4 +1,87 @@
-h1 {
-  color: #000; }
+.page-header h2 {
+  font-family: "Catamaran";
+  color: #FEFFFF;
+  text-shadow: 2px 4px 1px #000; }
+
+.page-header {
+  background-image: url("../images/headerBackground.png");
+  margin: 0; }
+
+.highlight, .highlight:hover {
+  color: #50B5FF;
+  text-shadow: 2px 4px 1px #000;
+  text-decoration: none; }
+
+.fa-hand-peace-o {
+  color: #FEFFFF;
+  text-shadow: 2px 1px 1px #1f5755;
+  opacity: 0.6;
+  margin-left: 5px;
+  font-size: smaller; }
+
+.social img {
+  height: 40px;
+  width: 40px; }
+
+#social {
+  margin-top: 15px; }
+
+#social:hover > a {
+  opacity: 0.6; }
+
+#social > a:hover {
+  opacity: 1; }
+
+#myWeb {
+  content: url("../images/offidea.png"); }
+
+#myWeb:hover {
+  content: url("../images/brightIdea.png"); }
+
+@media (min-width: 0) and (max-width: 360px) {
+  h2 {
+    font-size: 28px; }
+
+  .social img {
+    height: 35px;
+    width: 35px; }
+
+  #social {
+    margin-top: 30px; } }
+@media (min-width: 544px) and (max-width: 768px) {
+  h2 {
+    font-size: 28px; }
+
+  p {
+    font-size: 14px; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  h2 {
+    font-size: 50px; }
+
+  p {
+    font-size: 26px; }
+
+  #social {
+    margin-top: 30px; } }
+@media (min-width: 400px) {
+  .social img {
+    height: 50px;
+    width: 50px; }
+
+  #social {
+    margin-top: 25px; } }
+@media (min-width: 360px) and (max-width: 400px) {
+  .social img {
+    height: 40px;
+    width: 40px; }
+
+  #social {
+    margin-top: 30px; } }
+@media (min-width: 992px) {
+  h2 {
+    font-size: 54px; }
+
+  p {
+    font-size: 28px; } }
 
 /*# sourceMappingURL=header.css.map */
