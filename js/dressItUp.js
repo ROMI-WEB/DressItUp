@@ -51,11 +51,6 @@ function dressItUp () {
     broccoli.buttonMoustacheFour.addEventListener("click", addElement);
     broccoli.buttonMoustacheFive.addEventListener("click", addElement);
     document.getElementById("disket").addEventListener("click", self.download);
-
-    document.getElementById("restart").addEventListener("click", function () {
-        broccoli.setDefaultStyle();
-    });
-
     
     /**
      * Listeners para quitar elementos desde el personaje
