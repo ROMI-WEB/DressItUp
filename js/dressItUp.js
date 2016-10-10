@@ -5,13 +5,7 @@ function dressItUp () {
      * @type Character
      */
     var broccoli = new Character();
-    
-    /**
-     * Copia del personaje para su posterior restauración en caso de necesitarlo
-     * @type Character
-     */
-    var broccoliSaved = new Character();
-    
+
     var show = function (element) {
         element.style.visibility = "visible";
     };
@@ -58,6 +52,10 @@ function dressItUp () {
     broccoli.buttonMoustacheFive.addEventListener("click", addElement);
     document.getElementById("disket").addEventListener("click", self.download);
 
+    document.getElementById("restart").addEventListener("click", function () {
+        broccoli.setDefaultStyle();
+    });
+
     
     /**
      * Listeners para quitar elementos desde el personaje
@@ -97,10 +95,6 @@ function dressItUp () {
     $("#hair").spectrum().on('move.spectrum', function(e, tinycolor) {
         this.style.fill = tinycolor.toHexString();
     });
-};
-
-dressItUp.prototype.restore = function () {
-    broccoli = broccoliSaved;
 };
 
 dressItUp.prototype.addElement = function () {

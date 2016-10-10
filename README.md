@@ -8,15 +8,18 @@ Diseño de un juego en el que puedas elegir los colores de la vestimenta de el p
 
 - CSS3
     - [Bootstrap](http://getbootstrap.com/)
+    - [FontAwesome](http://fontawesome.io/)
 
 - JavaScript
     - [Spectrum Color Picker](https://bgrins.github.io/spectrum/)
+    - [Save SVGasPNG](https://github.com/exupero/saveSvgAsPng)
 
 - Otros
     - [Sass](http://sass-lang.com/)
     - [FontAwesome to Favicon](http://paulferrett.com/fontawesome-favicon/)
 
 ## Screenshots
+![](https://raw.githubusercontent.com/ROMI-WEB/DressItUp/master/images/preview.gif)
 
 ## Author
 Romina Martín - [Página personal](http://rominamartin.github.io/)
